@@ -9,9 +9,9 @@ Repositorio de la práctica 3.1 de Base de Datos
 \## Enlace del sitio
 
 
-
-https://github.com/Andrey2005588/Practica3.1.git
-
+[
+https://andrey2005588.github.io/Practica3.1/
+]
 
 
 \## Integrantes
