@@ -1,0 +1,15 @@
+services:
+  db-gimnasio:
+    image: postgres:17
+    container_name: gimnasio-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: gimnasio
+    ports:
+      - "5434:5432"
+    volumes:
+      - gimnasio_data:/var/lib/postgresql/data
+
+volumes:
+  gimnasio_data:
