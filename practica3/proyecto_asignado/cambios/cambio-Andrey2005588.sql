@@ -1,3 +1,6 @@
+-- Cambio de esquema por Andrey2005588
+-- Propuesta: almacenar resultados de modelo ML de detección de anomalías
+
 CREATE TABLE modelo_ml (
     id_modelo SERIAL PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
@@ -5,7 +8,6 @@ CREATE TABLE modelo_ml (
     fecha_entrenamiento DATE NOT NULL,
     algoritmo VARCHAR(50)
 );
-
 
 CREATE TABLE prediccion_anomalia (
     id_prediccion SERIAL PRIMARY KEY,
@@ -20,14 +22,11 @@ CREATE TABLE prediccion_anomalia (
         REFERENCES modelo_ml(id_modelo) ON DELETE RESTRICT
 );
 
-
 INSERT INTO modelo_ml (nombre, version, fecha_entrenamiento, algoritmo)
 VALUES ('Detector Sismos', 'v1.0', '2026-10-01', 'Isolation Forest');
 
-
 INSERT INTO prediccion_anomalia (id_sismo, id_modelo, es_anomalia, probabilidad)
 VALUES (1, 1, TRUE, 0.8732);
-
 
 SELECT s.id_sismo, s.magnitud, s.estado, p.es_anomalia, p.probabilidad, m.version
 FROM dim_sismos s
