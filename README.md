@@ -14,7 +14,7 @@ Fork: https://github.com/Andrey2005588/Seismic-Data-Visualization-System
 PostgreSQL 17 en Docker
 
 ## Issue individual
-- Andrey2005588: https://github.com/Andrey2005588/practica2-individual-gym-sismos.git
+- Andrey2005588: https://github.com/Andrey2005588/Practica3.1/issues/3
 
 ## Enlace al sitio (Práctica 3.1)
 https://Andrey2005588.github.io/Practica3.1/
