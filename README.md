@@ -1,68 +1,37 @@
-\# Practica 3.1 - Gimnasio
+# Práctica 3 - Bases de Datos
+
+## Integrantes
+- Serna Villa Jurgen Andrey 
+
+## Proyecto propio
+Sistema de Gestión para Gimnasio
+
+## Proyecto asignado
+Seismic Data Visualization System
+Fork: https://github.com/Andrey2005588/Seismic-Data-Visualization-System
+
+## Gestor utilizado
+PostgreSQL 17 en Docker
+
+## Issue individual
+- Andrey2005588: https://github.com/Andrey2005588/practica2-individual-gym-sismos.git
+
+## Enlace al sitio (Práctica 3.1)
+https://Andrey2005588.github.io/Practica3.1/
+
+## Estructura
+- `docs/` → sitio de la Práctica 3.1
+- `practica3/proyecto-propio/` → SQL, diagrama y evidencias del gimnasio
+- `practica3/proyecto-asignado/` → análisis del proyecto sismos
+- `levantamiento.md` → cómo se levantó el proyecto asignado
+- `compose.yaml` → Docker del proyecto propio
+
+## Cómo levantar el proyecto propio
+docker compose up -d
+docker exec -i gimnasio-db psql -U admin -d gimnasio < practica3/proyecto-propio/sql/esquema.sql
 
 
+##Bibliografía:
+Elmasri, R., & Navathe, S. B. (2016). Fundamentals of Database Systems (7th ed.). Pearson.
 
-Repositorio de la práctica 3.1 de Base de Datos
-
-
-
-\## Enlace del sitio
-
-
-[
-https://andrey2005588.github.io/Practica3.1/
-]
-
-
-\## Integrantes
-
-
-
-\- Serna Villa Jurgen Andrey 
-
-
-
-\## Descripción de mi proyecto:
-
-
-
-El gimnasio necesita un sistema para gestionar el acceso de sus socios, las membresías, los pagos, la asignación de clases y el control del personal. Actualmente todo se lleva en hojas de cálculo y libretas, lo que complica saber quién está al corriente con sus pagos, qué clases tienen cupo y qué entrenadores están asignados.
-
-
-
-El sistema se resuelve con una base de datos relacional que refleja las reglas del negocio.
-
-
-
-\## Diagramas solicitados:
-
-
-
-\- Modelo EER: `docs/eer.png`
-
-\- Modelo Relacional: `docs/relacional.png`
-
-
-
-\## Estructura que maneje en el repositorio:
-
-
-
-\- `docs/` andrey2005588.github.io/Practica3.1/
-
-\- `docs/index.html` → página principal
-
-\- `docs/eer.png` → diagrama entidad-relación extendido
-
-\- `docs/relacional.png` → diagrama relacional
-
-
-
-
-
-\## Estado y lo que me falta:
-
-
-
-El sitio estático ya está publicado. Falta implementar el backend y la conexión a la base de datos
-
+Silberschatz, A., Korth, H. F., & Sudarshan, S. (2019). Database System Concepts (7th ed.). McGraw-Hill.
